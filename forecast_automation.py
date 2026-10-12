@@ -11,12 +11,13 @@ LOCATIONS = {
 
 
 def fetch_hrrr_forecast(lat, lon):
-  """Fetches high-resolution HRRR/GFS blended forecast data via Open-Meteo API"""
+  """Fetches high-resolution HRRR/GFS blended forecast data via Open-Meteo API in Fahrenheit"""
   url = "https://api.open-meteo.com/v1/gfs"
   params = {
       "latitude": lat,
       "longitude": lon,
       "hourly": "temperature_2m,precipitation_probability,weather_code",
+      "temperature_unit": "fahrenheit",  # <--- This forces Fahrenheit output
       "forecast_days": 2,
   }
 
