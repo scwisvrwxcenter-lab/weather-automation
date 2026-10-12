@@ -1,0 +1,30 @@
+name: Daily Weather Automation
+
+on:
+  schedule:
+    - cron: '0 11 * * *' # Runs every day at 11:00 UTC
+  workflow_dispatch:
+
+jobs:
+  run-forecast:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run forecast script
+        run: python forecast_automation.py
+
+      - name: Commit and push changes back to repo
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'Auto-update daily forecast cache'
+          file_pattern: 'daily_forecast_cache.json'
