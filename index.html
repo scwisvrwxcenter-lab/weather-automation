@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Weather Outlook</title>
+    <title>7-Day Weather Outlook</title>
     
-    <!-- Link your CSS styling -->
+    <!-- External CSS styling -->
     <link rel="stylesheet" href="style.css">
     
-    <!-- Link your JS loader script -->
+    <!-- JavaScript execution deferred until body parses -->
     <script src="script.js" defer></script>
 </head>
 <body>
 
-    <!-- Insert the dashboard structure here -->
     <div class="weather-dashboard">
         <header class="dashboard-header">
             <h1 id="outlook-title">Weather Outlook</h1>
+            
+            <!-- Dynamic location selector tab bar -->
+            <div id="location-buttons" class="location-tabs"></div>
+            
             <p id="region-label">Loading region data...</p>
         </header>
 
-        <!-- 7-Day Cards Container -->
-        <div id="forecast-cards-container" class="cards-grid">
-            <!-- Cards will be populated here automatically -->
-        </div>
+        <!-- 7-Day Outlook Cards Grid -->
+        <div id="forecast-cards-container" class="cards-grid"></div>
         
         <footer id="outlook-summary" class="dashboard-footer">
-            <!-- Summary text placeholder -->
+            Temperatures updated daily in Central Time via NOAA/Open-Meteo runs.
         </footer>
     </div>
 
