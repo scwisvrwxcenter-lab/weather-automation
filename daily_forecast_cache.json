@@ -1,9 +1,10 @@
 {
-    "updated_at": "2026-10-18T19:23:11.504938-05:00",
-    "date_range": "10/18 - 10/24",
+    "updated_at": "2026-10-18T19:39:15.364908-05:00",
+    "date_range": "10/18-10/24",
     "forecasts": {
         "Lancaster_WI": {
-            "region_description": "South-Western",
+            "display_name": "Lancaster, WI",
+            "region_description": "South-Western Grant County",
             "days": [
                 {
                     "date": "10/18",
@@ -65,13 +66,14 @@
                     "high": 67,
                     "low": 53,
                     "precip_prob": 6,
-                    "condition": "Rainy",
+                    "condition": "Drizzle",
                     "risk_level": "0/6 Risk"
                 }
             ]
         },
         "Madison_WI": {
-            "region_description": "South-Central",
+            "display_name": "Madison, WI",
+            "region_description": "South-Central Dane County",
             "days": [
                 {
                     "date": "10/18",
@@ -133,13 +135,14 @@
                     "high": 68,
                     "low": 56,
                     "precip_prob": 4,
-                    "condition": "Rainy",
+                    "condition": "Drizzle",
                     "risk_level": "0/6 Risk"
                 }
             ]
         },
         "Milwaukee_WI": {
-            "region_description": "South-Eastern",
+            "display_name": "Milwaukee, WI",
+            "region_description": "South-Eastern Milwaukee County",
             "days": [
                 {
                     "date": "10/18",
@@ -165,7 +168,7 @@
                     "high": 60,
                     "low": 46,
                     "precip_prob": 0,
-                    "condition": "Fair",
+                    "condition": "Foggy",
                     "risk_level": "0/6 Risk"
                 },
                 {
