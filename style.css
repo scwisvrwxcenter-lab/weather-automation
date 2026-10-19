@@ -1,0 +1,92 @@
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+.weather-dashboard {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dashboard-header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: #ffcc00;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* 7-Day Grid Layout */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Individual Day Card */
+.forecast-card {
+    background: #4a2d73; /* Dark purple card background */
+    border: 2px solid #6b439c;
+    border-radius: 8px;
+    padding: 12px 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-header {
+    background: #351f54;
+    border-radius: 4px;
+    padding: 6px 2px;
+    margin-bottom: 10px;
+}
+
+.day-name {
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: block;
+}
+
+.day-date {
+    font-size: 0.8rem;
+    color: #e0e0e0;
+}
+
+.card-body {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.temps {
+    font-weight: bold;
+    font-size: 1.05rem;
+    margin: 8px 0;
+}
+
+.precip, .risk, .condition {
+    font-size: 0.85rem;
+    margin: 4px 0;
+    color: #f0f0f0;
+}
+
+.dashboard-footer {
+    text-align: center;
+    font-size: 0.95rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 15px;
+    color: #fce38a;
+}
