@@ -8,14 +8,21 @@ document.addEventListener("DOMContentLoaded", () => {
             const locationKeys = Object.keys(data.forecasts);
             if (locationKeys.length === 0) return;
 
+            // Check URL query parameters (e.g., ?location=Madison_WI)
+            const urlParams = new URLSearchParams(window.location.search);
+            const targetLocation = urlParams.get('location');
+
             const buttonsContainer = document.getElementById('location-buttons');
             buttonsContainer.innerHTML = '';
 
+            let defaultKey = locationKeys[0]; // Fallback to Lancaster
+
             // Generate tab buttons for Lancaster, Madison, and Milwaukee
-            locationKeys.forEach((key, index) => {
+            locationKeys.forEach((key) => {
                 const loc = data.forecasts[key];
                 const btn = document.createElement('button');
-                btn.className = `location-btn ${index === 0 ? 'active' : ''}`;
+                btn.id = `btn-${key}`;
+                btn.className = 'location-btn';
                 btn.innerText = loc.display_name || key.replace('_', ' ');
                 
                 btn.addEventListener('click', () => {
@@ -25,10 +32,18 @@ document.addEventListener("DOMContentLoaded", () => {
                 });
 
                 buttonsContainer.appendChild(btn);
+
+                // If URL parameter matches this key, mark it as default
+                if (targetLocation && targetLocation.toLowerCase() === key.toLowerCase()) {
+                    defaultKey = key;
+                }
             });
 
-            // Render Lancaster by default
-            renderForecastCards(data.forecasts[locationKeys[0]]);
+            // Set initial active state and display target location
+            const activeBtn = document.getElementById(`btn-${defaultKey}`) || buttonsContainer.firstElementChild;
+            if (activeBtn) activeBtn.classList.add('active');
+            
+            renderForecastCards(data.forecasts[defaultKey]);
         })
         .catch(error => console.error('Error loading forecast cache:', error));
 });
