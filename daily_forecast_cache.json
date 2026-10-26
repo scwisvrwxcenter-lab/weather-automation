@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-10-26T06:27:35.131330-05:00",
+    "updated_at": "2026-10-26T12:17:06.190410-05:00",
     "date_range": "10/26-11/01",
     "forecasts": {
         "Lancaster_WI": {
@@ -9,65 +9,65 @@
                 {
                     "date": "10/26",
                     "day_name": "MON",
-                    "high": 61,
+                    "high": 62,
                     "low": 49,
-                    "precip_prob": 3,
+                    "precip_prob": 2,
                     "condition": "Cloudy",
-                    "risk_level": "0/6 Risk"
+                    "risk_level": "0/5 Risk"
                 },
                 {
                     "date": "10/27",
                     "day_name": "TUE",
-                    "high": 68,
+                    "high": 65,
                     "low": 48,
-                    "precip_prob": 5,
+                    "precip_prob": 7,
                     "condition": "Cloudy",
-                    "risk_level": "0/6 Risk"
+                    "risk_level": "0/5 Risk"
                 },
                 {
                     "date": "10/28",
                     "day_name": "WED",
-                    "high": 68,
-                    "low": 50,
+                    "high": 66,
+                    "low": 51,
                     "precip_prob": 16,
                     "condition": "Drizzle",
-                    "risk_level": "0/6 Risk"
+                    "risk_level": "0/5 Risk"
                 },
                 {
                     "date": "10/29",
                     "day_name": "THU",
-                    "high": 66,
-                    "low": 49,
-                    "precip_prob": 71,
+                    "high": 64,
+                    "low": 47,
+                    "precip_prob": 63,
                     "condition": "Drizzle",
-                    "risk_level": "0/6 Risk"
+                    "risk_level": "0/5 Risk"
                 },
                 {
                     "date": "10/30",
                     "day_name": "FRI",
-                    "high": 59,
-                    "low": 46,
-                    "precip_prob": 45,
-                    "condition": "Cloudy",
-                    "risk_level": "0/6 Risk"
+                    "high": 57,
+                    "low": 43,
+                    "precip_prob": 55,
+                    "condition": "Drizzle",
+                    "risk_level": "0/5 Risk"
                 },
                 {
                     "date": "10/31",
                     "day_name": "SAT",
-                    "high": 55,
-                    "low": 47,
-                    "precip_prob": 45,
+                    "high": 60,
+                    "low": 49,
+                    "precip_prob": 54,
                     "condition": "Drizzle",
-                    "risk_level": "0/6 Risk"
+                    "risk_level": "0/5 Risk"
                 },
                 {
                     "date": "11/01",
                     "day_name": "SUN",
-                    "high": 57,
+                    "high": 60,
                     "low": 52,
-                    "precip_prob": 29,
+                    "precip_prob": 25,
                     "condition": "Drizzle",
-                    "risk_level": "0/6 Risk"
+                    "risk_level": "0/5 Risk"
                 }
             ]
         },
@@ -78,65 +78,65 @@
                 {
                     "date": "10/26",
                     "day_name": "MON",
-                    "high": 60,
-                    "low": 47,
+                    "high": 59,
+                    "low": 48,
                     "precip_prob": 4,
                     "condition": "Cloudy",
-                    "risk_level": "0/6 Risk"
+                    "risk_level": "0/5 Risk"
                 },
                 {
                     "date": "10/27",
                     "day_name": "TUE",
-                    "high": 69,
+                    "high": 68,
                     "low": 46,
-                    "precip_prob": 6,
+                    "precip_prob": 7,
                     "condition": "Cloudy",
-                    "risk_level": "0/6 Risk"
+                    "risk_level": "0/5 Risk"
                 },
                 {
                     "date": "10/28",
                     "day_name": "WED",
-                    "high": 70,
-                    "low": 52,
-                    "precip_prob": 7,
-                    "condition": "Drizzle",
-                    "risk_level": "0/6 Risk"
+                    "high": 69,
+                    "low": 54,
+                    "precip_prob": 11,
+                    "condition": "Cloudy",
+                    "risk_level": "0/5 Risk"
                 },
                 {
                     "date": "10/29",
                     "day_name": "THU",
-                    "high": 66,
-                    "low": 49,
-                    "precip_prob": 53,
+                    "high": 67,
+                    "low": 47,
+                    "precip_prob": 32,
                     "condition": "Drizzle",
-                    "risk_level": "0/6 Risk"
+                    "risk_level": "0/5 Risk"
                 },
                 {
                     "date": "10/30",
                     "day_name": "FRI",
-                    "high": 59,
-                    "low": 46,
-                    "precip_prob": 29,
+                    "high": 60,
+                    "low": 42,
+                    "precip_prob": 49,
                     "condition": "Cloudy",
-                    "risk_level": "0/6 Risk"
+                    "risk_level": "0/5 Risk"
                 },
                 {
                     "date": "10/31",
                     "day_name": "SAT",
-                    "high": 53,
-                    "low": 46,
-                    "precip_prob": 36,
-                    "condition": "Drizzle",
-                    "risk_level": "0/6 Risk"
+                    "high": 58,
+                    "low": 49,
+                    "precip_prob": 49,
+                    "condition": "Rainy",
+                    "risk_level": "0/5 Risk"
                 },
                 {
                     "date": "11/01",
                     "day_name": "SUN",
-                    "high": 56,
-                    "low": 50,
-                    "precip_prob": 27,
+                    "high": 55,
+                    "low": 48,
+                    "precip_prob": 28,
                     "condition": "Drizzle",
-                    "risk_level": "0/6 Risk"
+                    "risk_level": "0/5 Risk"
                 }
             ]
         },
@@ -147,65 +147,65 @@
                 {
                     "date": "10/26",
                     "day_name": "MON",
-                    "high": 57,
+                    "high": 56,
                     "low": 48,
-                    "precip_prob": 5,
+                    "precip_prob": 3,
                     "condition": "Cloudy",
-                    "risk_level": "0/6 Risk"
+                    "risk_level": "0/5 Risk"
                 },
                 {
                     "date": "10/27",
                     "day_name": "TUE",
-                    "high": 59,
+                    "high": 60,
                     "low": 51,
-                    "precip_prob": 5,
+                    "precip_prob": 8,
                     "condition": "Cloudy",
-                    "risk_level": "0/6 Risk"
+                    "risk_level": "0/5 Risk"
                 },
                 {
                     "date": "10/28",
                     "day_name": "WED",
                     "high": 66,
-                    "low": 56,
+                    "low": 54,
                     "precip_prob": 2,
                     "condition": "Cloudy",
-                    "risk_level": "0/6 Risk"
+                    "risk_level": "0/5 Risk"
                 },
                 {
                     "date": "10/29",
                     "day_name": "THU",
                     "high": 64,
                     "low": 54,
-                    "precip_prob": 31,
+                    "precip_prob": 27,
                     "condition": "Drizzle",
-                    "risk_level": "0/6 Risk"
+                    "risk_level": "0/5 Risk"
                 },
                 {
                     "date": "10/30",
                     "day_name": "FRI",
                     "high": 55,
                     "low": 51,
-                    "precip_prob": 26,
+                    "precip_prob": 35,
                     "condition": "Cloudy",
-                    "risk_level": "0/6 Risk"
+                    "risk_level": "0/5 Risk"
                 },
                 {
                     "date": "10/31",
                     "day_name": "SAT",
                     "high": 56,
                     "low": 53,
-                    "precip_prob": 26,
+                    "precip_prob": 42,
                     "condition": "Drizzle",
-                    "risk_level": "0/6 Risk"
+                    "risk_level": "0/5 Risk"
                 },
                 {
                     "date": "11/01",
                     "day_name": "SUN",
                     "high": 54,
                     "low": 52,
-                    "precip_prob": 21,
+                    "precip_prob": 25,
                     "condition": "Drizzle",
-                    "risk_level": "0/6 Risk"
+                    "risk_level": "0/5 Risk"
                 }
             ]
         }
