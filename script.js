@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const locationKeys = Object.keys(data.forecasts);
             if (locationKeys.length === 0) return;
 
-            // Check URL query parameters (e.g., ?location=Madison_WI)
+            // Read URL query parameters (e.g. ?location=Madison_WI)
             const urlParams = new URLSearchParams(window.location.search);
             const targetLocation = urlParams.get('location');
 
@@ -33,13 +33,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 buttonsContainer.appendChild(btn);
 
-                // If URL parameter matches this key, mark it as default
+                // Match location parameter if present in URL
                 if (targetLocation && targetLocation.toLowerCase() === key.toLowerCase()) {
                     defaultKey = key;
                 }
             });
 
-            // Set initial active state and display target location
+            // Set default active tab and render cards
             const activeBtn = document.getElementById(`btn-${defaultKey}`) || buttonsContainer.firstElementChild;
             if (activeBtn) activeBtn.classList.add('active');
             
