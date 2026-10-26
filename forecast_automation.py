@@ -1,6 +1,7 @@
 from datetime import datetime
 import json
 import requests
+from shapely.geometry import Point, shape
 from zoneinfo import ZoneInfo
 
 # Defined locations: Lancaster, Madison, and Milwaukee
@@ -67,29 +68,51 @@ def fetch_7day_forecast(lat, lon):
 
 
 def fetch_spc_risk(lat, lon):
-  """Pulls live NOAA SPC Day 1 categorical risk data."""
+  """Checks whether lat/lon falls inside active SPC Day 1 categorical risk polygon.
+
+  Maps SPC severe weather categories to a 5-point scale (1/5 to 5/5).
+  Defaults to '0/5 Risk' if no active risk covers the location.
+  """
   spc_url = (
       "https://www.spc.noaa.gov/products/outlook/day1otlk_cat.lyr.geojson"
   )
+  point = Point(lon, lat)  # Point order in GeoJSON geometry is (lon, lat)
+
+  # Standard 5-Level SPC Categorical Risk Scale
+  risk_map = {
+      "MRGL": "1/5 Risk",  # Level 1: Marginal
+      "SLGT": "2/5 Risk",  # Level 2: Slight
+      "ENH": "3/5 Risk",  # Level 3: Enhanced
+      "MDT": "4/5 Risk",  # Level 4: Moderate
+      "HIGH": "5/5 Risk",  # Level 5: High
+  }
+
   try:
     res = requests.get(spc_url, timeout=10)
     if res.status_code == 200:
       geojson = res.json()
+      highest_risk = "0/5 Risk"
+      highest_level = 0
+
       for feature in geojson.get("features", []):
-        label = feature.get("properties", {}).get("LABEL", "")
-        if "MRGL" in label:
-          return "1/6 Risk"
-        elif "SLGT" in label:
-          return "2/6 Risk"
-        elif "ENH" in label:
-          return "3/6 Risk"
-        elif "MDT" in label:
-          return "4/6 Risk"
-        elif "HIGH" in label:
-          return "5/6 Risk"
-  except Exception:
-    pass
-  return "0/6 Risk"
+        properties = feature.get("properties", {})
+        label = str(properties.get("LABEL", "")).upper()
+
+        # Spatial check: verifies if coordinates are inside polygon geometry
+        polygon = shape(feature.get("geometry"))
+        if polygon.contains(point):
+          for code, risk_text in risk_map.items():
+            if code in label:
+              level = int(risk_text.split("/")[0])
+              if level > highest_level:
+                highest_level = level
+                highest_risk = risk_text
+
+      return highest_risk
+  except Exception as e:
+    print(f"Error checking SPC risk: {e}")
+
+  return "0/5 Risk"
 
 
 def generate_daily_report():
@@ -135,7 +158,7 @@ def generate_daily_report():
           "condition": wmo_to_condition(
               weather_codes[i] if i < len(weather_codes) else 0
           ),
-          "risk_level": spc_risk if i == 0 else "0/6 Risk",
+          "risk_level": spc_risk if i == 0 else "0/5 Risk",
       })
 
     master_data["forecasts"][key] = {
@@ -147,7 +170,10 @@ def generate_daily_report():
   with open("daily_forecast_cache.json", "w") as f:
     json.dump(master_data, f, indent=4)
 
-  print("Successfully generated 7-day Central Time forecast cache!")
+  print(
+      "Successfully generated 7-day Central Time forecast cache with fixed 5-point"
+      " SPC risk scale!"
+  )
 
 
 if __name__ == "__main__":
