@@ -1,72 +1,72 @@
 {
-    "updated_at": "2026-11-02T05:38:27.406827-06:00",
-    "date_range": "11/02-11/08",
+    "updated_at": "2026-11-03T05:38:02.823409-06:00",
+    "date_range": "11/03-11/09",
     "forecasts": {
         "Lancaster_WI": {
             "display_name": "Lancaster, WI",
             "region_description": "South-Western Grant County",
             "days": [
                 {
-                    "date": "11/02",
-                    "day_name": "MON",
-                    "high": 62,
-                    "low": 56,
-                    "precip_prob": 60,
-                    "condition": "Rainy",
-                    "risk_level": "0/5 Risk"
-                },
-                {
                     "date": "11/03",
                     "day_name": "TUE",
-                    "high": 65,
-                    "low": 57,
-                    "precip_prob": 88,
-                    "condition": "Rainy",
+                    "high": 67,
+                    "low": 60,
+                    "precip_prob": 70,
+                    "condition": "Drizzle",
                     "risk_level": "0/5 Risk"
                 },
                 {
                     "date": "11/04",
                     "day_name": "WED",
-                    "high": 57,
-                    "low": 48,
-                    "precip_prob": 75,
-                    "condition": "Drizzle",
+                    "high": 61,
+                    "low": 46,
+                    "precip_prob": 47,
+                    "condition": "Rainy",
                     "risk_level": "0/5 Risk"
                 },
                 {
                     "date": "11/05",
                     "day_name": "THU",
                     "high": 49,
-                    "low": 44,
-                    "precip_prob": 21,
+                    "low": 43,
+                    "precip_prob": 42,
                     "condition": "Drizzle",
                     "risk_level": "0/5 Risk"
                 },
                 {
                     "date": "11/06",
                     "day_name": "FRI",
-                    "high": 48,
-                    "low": 38,
-                    "precip_prob": 10,
+                    "high": 47,
+                    "low": 36,
+                    "precip_prob": 22,
                     "condition": "Cloudy",
                     "risk_level": "0/5 Risk"
                 },
                 {
                     "date": "11/07",
                     "day_name": "SAT",
-                    "high": 51,
-                    "low": 35,
-                    "precip_prob": 5,
-                    "condition": "Drizzle",
+                    "high": 54,
+                    "low": 34,
+                    "precip_prob": 2,
+                    "condition": "Cloudy",
                     "risk_level": "0/5 Risk"
                 },
                 {
                     "date": "11/08",
                     "day_name": "SUN",
-                    "high": 46,
-                    "low": 36,
-                    "precip_prob": 15,
-                    "condition": "Drizzle",
+                    "high": 56,
+                    "low": 40,
+                    "precip_prob": 8,
+                    "condition": "Cloudy",
+                    "risk_level": "0/5 Risk"
+                },
+                {
+                    "date": "11/09",
+                    "day_name": "MON",
+                    "high": 60,
+                    "low": 41,
+                    "precip_prob": 3,
+                    "condition": "Cloudy",
                     "risk_level": "0/5 Risk"
                 }
             ]
@@ -76,30 +76,21 @@
             "region_description": "South-Central Dane County",
             "days": [
                 {
-                    "date": "11/02",
-                    "day_name": "MON",
-                    "high": 62,
-                    "low": 54,
-                    "precip_prob": 43,
-                    "condition": "Rainy",
-                    "risk_level": "0/5 Risk"
-                },
-                {
                     "date": "11/03",
                     "day_name": "TUE",
-                    "high": 65,
+                    "high": 66,
                     "low": 62,
-                    "precip_prob": 91,
+                    "precip_prob": 75,
                     "condition": "Rainy",
                     "risk_level": "0/5 Risk"
                 },
                 {
                     "date": "11/04",
                     "day_name": "WED",
-                    "high": 62,
-                    "low": 49,
-                    "precip_prob": 91,
-                    "condition": "Drizzle",
+                    "high": 63,
+                    "low": 48,
+                    "precip_prob": 50,
+                    "condition": "Rainy",
                     "risk_level": "0/5 Risk"
                 },
                 {
@@ -107,34 +98,43 @@
                     "day_name": "THU",
                     "high": 50,
                     "low": 44,
-                    "precip_prob": 38,
+                    "precip_prob": 40,
                     "condition": "Drizzle",
                     "risk_level": "0/5 Risk"
                 },
                 {
                     "date": "11/06",
                     "day_name": "FRI",
-                    "high": 47,
-                    "low": 36,
-                    "precip_prob": 14,
+                    "high": 48,
+                    "low": 35,
+                    "precip_prob": 33,
                     "condition": "Cloudy",
                     "risk_level": "0/5 Risk"
                 },
                 {
                     "date": "11/07",
                     "day_name": "SAT",
-                    "high": 50,
-                    "low": 33,
-                    "precip_prob": 6,
+                    "high": 51,
+                    "low": 34,
+                    "precip_prob": 5,
                     "condition": "Cloudy",
                     "risk_level": "0/5 Risk"
                 },
                 {
                     "date": "11/08",
                     "day_name": "SUN",
-                    "high": 46,
-                    "low": 36,
-                    "precip_prob": 19,
+                    "high": 54,
+                    "low": 37,
+                    "precip_prob": 11,
+                    "condition": "Cloudy",
+                    "risk_level": "0/5 Risk"
+                },
+                {
+                    "date": "11/09",
+                    "day_name": "MON",
+                    "high": 56,
+                    "low": 34,
+                    "precip_prob": 7,
                     "condition": "Cloudy",
                     "risk_level": "0/5 Risk"
                 }
@@ -145,65 +145,65 @@
             "region_description": "South-Eastern Milwaukee County",
             "days": [
                 {
-                    "date": "11/02",
-                    "day_name": "MON",
-                    "high": 60,
-                    "low": 50,
-                    "precip_prob": 21,
-                    "condition": "Cloudy",
-                    "risk_level": "0/5 Risk"
-                },
-                {
                     "date": "11/03",
                     "day_name": "TUE",
-                    "high": 66,
+                    "high": 68,
                     "low": 60,
-                    "precip_prob": 76,
-                    "condition": "Drizzle",
+                    "precip_prob": 43,
+                    "condition": "Rainy",
                     "risk_level": "0/5 Risk"
                 },
                 {
                     "date": "11/04",
                     "day_name": "WED",
-                    "high": 61,
-                    "low": 53,
-                    "precip_prob": 87,
-                    "condition": "Rainy",
+                    "high": 62,
+                    "low": 51,
+                    "precip_prob": 57,
+                    "condition": "Drizzle",
                     "risk_level": "0/5 Risk"
                 },
                 {
                     "date": "11/05",
                     "day_name": "THU",
                     "high": 53,
-                    "low": 47,
-                    "precip_prob": 21,
+                    "low": 46,
+                    "precip_prob": 38,
                     "condition": "Drizzle",
                     "risk_level": "0/5 Risk"
                 },
                 {
                     "date": "11/06",
                     "day_name": "FRI",
-                    "high": 47,
-                    "low": 41,
-                    "precip_prob": 13,
-                    "condition": "Drizzle",
+                    "high": 48,
+                    "low": 42,
+                    "precip_prob": 38,
+                    "condition": "Cloudy",
                     "risk_level": "0/5 Risk"
                 },
                 {
                     "date": "11/07",
                     "day_name": "SAT",
-                    "high": 47,
-                    "low": 39,
-                    "precip_prob": 5,
+                    "high": 53,
+                    "low": 40,
+                    "precip_prob": 10,
                     "condition": "Cloudy",
                     "risk_level": "0/5 Risk"
                 },
                 {
                     "date": "11/08",
                     "day_name": "SUN",
-                    "high": 47,
-                    "low": 40,
-                    "precip_prob": 14,
+                    "high": 56,
+                    "low": 47,
+                    "precip_prob": 12,
+                    "condition": "Cloudy",
+                    "risk_level": "0/5 Risk"
+                },
+                {
+                    "date": "11/09",
+                    "day_name": "MON",
+                    "high": 58,
+                    "low": 45,
+                    "precip_prob": 5,
                     "condition": "Cloudy",
                     "risk_level": "0/5 Risk"
                 }
